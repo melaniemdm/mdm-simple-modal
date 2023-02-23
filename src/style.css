@@ -1,7 +1,7 @@
 
 
 body {
-  margin: 0;
+    margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -46,7 +46,14 @@ label {
 .MuiTableRow-root{
   margin: 50px;
 }
-
+.backgroundModal{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(91, 91, 101, 0.5);
+}
 .modalContainer{
   position: absolute; /* postulat de départ */
   top: 50%; left: 50%; /* à 50%/50% du parent référent */
@@ -54,9 +61,9 @@ label {
   display: flex;
   flex-direction: row;
  justify-content: space-between;
+ /* width: 500px;
  background-color: white;
- width: 500px;
- height: 50px;
+ height: 50px; */
  border-radius: 10px;
  border: 1px solid black;
  box-shadow: 10px 5px 5px black;
@@ -67,20 +74,13 @@ label {
  font-weight: bold;
  
  }
- .close{
-  z-index: 5;
- margin-bottom: 8px;
-  color: white;
-  font-size: 20px;
- }
+
 .container-close{
-  margin-left: 100px;
-  background-color: black;
-  border-radius: 50%;
-  border: 1px solid black;
-  width: 20px;
+margin-left: 110px;
+   width: 20px;
   height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+ }
+ .close img{
+  cursor: pointer;
+  margin-top: -10px;
+ }
