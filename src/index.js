@@ -16,7 +16,7 @@ export function SimpleModal(props) {
   const bgColor = props.options.bgColor ? props.options.bgColor : 'white';
   const height = props.options.height ? props.options.height : '50px';
   const maskBgColor = props.options.maskBgColor? props.options.maskBgColor : 'gray';
-  const maskBgOpacity = props.options.maskBgOpacity? props.options.maskBgOpacity : '0.5';
+  const maskBgOpacity = props.options.maskBgOpacity? props.options.maskBgOpacity : '1';
   return (
     <div className='backgroundModal' style={{backgroundColor:maskBgColor, opacity: maskBgOpacity}}>
       {' '}

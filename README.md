@@ -50,7 +50,7 @@ class Example extends Component {
 |height          |String   |50px   |
 |width           |String   |500px  |
 |maskBgColor     |String   |gray   |
-|maskBgOpacity   |String   |0.5    |
+|maskBgOpacity   |String   |1      |
 
 ## License
 
