@@ -1,10 +1,10 @@
 {
   "name": "mdm-simple-modal",
   "version": "2.0.0",
-  "description": "Made with create-react-library",
+  "description": "just another simple modal component",
   "author": "melaniemdm",
   "license": "MIT",
-  "repository": "melaniemdm/simple-modal",
+  "repository": "melaniemdm/mdm-simple-modal",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
