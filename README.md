@@ -37,18 +37,20 @@ import 'mdm-simple-modal/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <SimpleModal text='Hello World !' options={{bgColor='yellowgreen'}}/>
+    return <SimpleModal text='Hello World !' options={{bgColor:'yellowgreen'}}/>
   }
 }
 ```
 
 ### Available options
 
-|option  |type     |default|
-|---     |---      |---    |
-|bgColor |String   |White  |
-|height  |String   |50px   |
-|width   |String   |500px  |
+|option          |type     |default|
+|---             |---      |---    |
+|bgColor         |String   |White  |
+|height          |String   |50px   |
+|width           |String   |500px  |
+|maskBgColor     |String   |gray   |
+|maskBgOpacity   |String   |0.5    |
 
 ## License
 
