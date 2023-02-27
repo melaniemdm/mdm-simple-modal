@@ -13,9 +13,12 @@ id.style.display="none"
 
 
 
-export function ModalEmployeeCreated(props){
-    const width = props.width? props.width:'500px';
-    return <div className='backgroundModal'> <div  className="modalContainer" style={{width: width, backgroundColor: 'white', height: '50px'}}> 
+
+export function SimpleModal(props){
+    const width = props.options.width? props.options.width:'500px';
+    const bgColor = props.options.bgColor? props.options.bgColor:'white';
+    const height = props.options.height? props.options.height : '50px';
+    return <div className='backgroundModal'> <div  className="modalContainer" style={{width: width, backgroundColor: bgColor, height: height}}> 
         <div  className="modal">{props.text}</div>
         <div className="container-close">
 <div className='close' onClick={closeModal}> 
