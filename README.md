@@ -1,4 +1,4 @@
-# simple-modal
+# mdm-simple-modal
 
 > Made with create-react-library
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save simple-modal
+npm install --save mdm-simple-modal
 ```
 
 ## Usage
@@ -15,15 +15,40 @@ npm install --save simple-modal
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'simple-modal'
-import 'simple-modal/dist/index.css'
+import SimpleModal from 'mdm-simple-modal'
+import 'mdm-simple-modal/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <SimpleModal text='Hello World !'/>
   }
 }
 ```
+
+## Options
+
+### Add options
+
+```jsx
+import React, { Component } from 'react'
+
+import SimpleModal from 'mdm-simple-modal'
+import 'mdm-simple-modal/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <SimpleModal text='Hello World !' options={{bgColor='yellowgreen'}}/>
+  }
+}
+```
+
+### Available options
+
+|option  |type     |default|
+|---     |---      |---    |
+|bgColor |String   |White  |
+|height  |String   |50px   |
+|width   |String   |500px  |
 
 ## License
 

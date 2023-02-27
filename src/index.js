@@ -12,8 +12,6 @@ id.style.display="none"
 }
 
 
-
-
 export function SimpleModal(props){
     const width = props.options.width? props.options.width:'500px';
     const bgColor = props.options.bgColor? props.options.bgColor:'white';
