@@ -45,7 +45,7 @@ label {
   margin: 50px;
 }
 .backgroundModal {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;

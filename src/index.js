@@ -8,7 +8,9 @@ export function openModal() {
 }
 function closeModal() {
   const id = document.querySelector('.backgroundModal')
-  id.style.display = 'none'
+  id.style.display = 'none';
+  console.log("close modal")
+  console.log(id)
 }
 
 export function SimpleModal(props) {
