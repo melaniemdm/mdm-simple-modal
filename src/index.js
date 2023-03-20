@@ -17,19 +17,30 @@ export function SimpleModal(props) {
   const height = props.options.height ? props.options.height : '50px';
   const maskBgColor = props.options.maskBgColor? props.options.maskBgColor : 'gray';
   const maskBgOpacity = props.options.maskBgOpacity? props.options.maskBgOpacity : '1';
+  const imgUrl = props.options.imgUrl ? props.options.imgUrl : "";
+  const zIndex = props.options.zIndex ? props.options.zIndex : "100";
+  
   return (
-    <div className='backgroundModal' style={{backgroundColor:maskBgColor, opacity: maskBgOpacity}}>
+    <div className='backgroundModal' style={{backgroundColor:maskBgColor, opacity: maskBgOpacity, zIndex:zIndex}}>
       {' '}
-      <div
-        className='modalContainer'
-        style={{ width: width, backgroundColor: bgColor, height: height }}
-      >
-        <div className='modal'>{props.text}</div>
-        <div className='container-close'>
+       <div className='containerC-close' style={{ width: width}}>
           <div className='close' onClick={closeModal}>
             <img src={close} alt='close'></img>
           </div>
         </div>
+
+      <div
+        className='modalContainer'
+        style={{ width: width, backgroundColor: bgColor, height: height }}
+      >
+       
+
+        {/* texte modal */}
+        <div className='modal'>{props.text}</div>
+        {/* image modal  */}
+        <img src={imgUrl} alt="image" ></img>
+
+        
       </div>
     </div>
   )

@@ -15,12 +15,12 @@ npm install --save mdm-simple-modal
 ```jsx
 import React, { Component } from 'react'
 
-import SimpleModal from 'mdm-simple-modal'
+import {SimpleModal, openModal} from 'mdm-simple-modal'
 import 'mdm-simple-modal/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <SimpleModal text='Hello World !'/>
+    return <SimpleModal text='Hello World !'  />
   }
 }
 ```
@@ -32,12 +32,12 @@ class Example extends Component {
 ```jsx
 import React, { Component } from 'react'
 
-import SimpleModal from 'mdm-simple-modal'
+import {SimpleModal, openModal} from 'mdm-simple-modal'
 import 'mdm-simple-modal/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <SimpleModal text='Hello World !' options={{bgColor:'yellowgreen'}}/>
+    return <SimpleModal text='Hello World !' image='./dog.jpg' options={{bgColor:'red',width:'100%',height:'70%', imgUrl:dsn}}/>
   }
 }
 ```
@@ -51,6 +51,9 @@ class Example extends Component {
 |width           |String   |500px  |
 |maskBgColor     |String   |gray   |
 |maskBgOpacity   |String   |1      |
+|height          |String   |70%    |
+|imgUrl          |String   |       |
+|zindex          |String   |   10  |
 
 ## License
 

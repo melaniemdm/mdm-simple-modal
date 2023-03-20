@@ -45,6 +45,10 @@ label {
   margin: 50px;
 }
 .backgroundModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -52,16 +56,16 @@ label {
   left: 0;
   }
 .modalContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 10px 5px 5px black;
+}
+.modalContainer img{
+max-width: 95%;
+max-height: 95%;
 }
 .modal {
   margin-top: 10px;
@@ -69,9 +73,11 @@ label {
   font-weight: bold;
 }
 
-.container-close {
-  margin-left: 110px;
-  width: 20px;
+.containerC-close {
+  display: flex;
+ justify-content: flex-end;
+ transform: translateY(15px) translateX(15px);
+  width: 80%;
   height: 20px;
 }
 .close img {
