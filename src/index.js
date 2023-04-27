@@ -23,33 +23,60 @@ export function SimpleModal(props) {
   const maskBgOpacity = props.options.maskBgOpacity
     ? props.options.maskBgOpacity
     : '1'
+
   const imgUrl = props.options.imgUrl ? props.options.imgUrl : ''
   const zIndex = props.options.zIndex ? props.options.zIndex : '100'
-
-  return (
-    <div
-      className='backgroundModal'
-      style={{
-        backgroundColor: maskBgColor,
-        opacity: maskBgOpacity,
-        zIndex: zIndex
-      }}
-    >
-      {' '}
-      <div className='containerC-close' style={{ width: width }}>
-        <div className='close' onClick={closeModal}>
-          <img src={close} alt='close' />
+  if (props.options.imgUrl) {
+    return (
+      <div
+        className='backgroundModal'
+        style={{
+          backgroundColor: maskBgColor,
+          opacity: maskBgOpacity,
+          zIndex: zIndex
+        }}
+      >
+        {' '}
+        <div className='containerC-close' style={{ width: width }}>
+          <div className='close' onClick={closeModal}>
+            <img src={close} alt='close' />
+          </div>
+        </div>
+        <div
+          className='modalContainer'
+          style={{ width: width, backgroundColor: bgColor, height: height }}
+        >
+          {/* texte modal */}
+          <div className='modal'>{props.text}</div>
+          {/* image modal  */}
+          <img src={imgUrl} alt='image' />
         </div>
       </div>
+    )
+  } else {
+    return (
       <div
-        className='modalContainer'
-        style={{ width: width, backgroundColor: bgColor, height: height }}
+        className='backgroundModal'
+        style={{
+          backgroundColor: maskBgColor,
+          opacity: maskBgOpacity,
+          zIndex: zIndex
+        }}
       >
-        {/* texte modal */}
-        <div className='modal'>{props.text}</div>
-        {/* image modal  */}
-        <img src={imgUrl} alt='image' />
+        {' '}
+        <div className='containerC-close' style={{ width: width }}>
+          <div className='close' onClick={closeModal}>
+            <img src={close} alt='close' />
+          </div>
+        </div>
+        <div
+          className='modalContainer'
+          style={{ width: width, backgroundColor: bgColor, height: height }}
+        >
+          {/* texte modal */}
+          <div className='modal'>{props.text}</div>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
